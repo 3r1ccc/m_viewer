@@ -17,11 +17,11 @@ logger.info('start marionette client')
 
 def init():
     ret = subprocess.check_output("adb devices", shell=True)
-    if("unagi" in ret):
-        print(ret)
-    else:
-        print("No unagi connected")
-        sys.exit(1)
+#    if("unagi" in ret):
+#        print(ret)
+#    else:
+#        print("No unagi connected")
+#        sys.exit(1)
     import socket
     s = socket.socket()
     try:
